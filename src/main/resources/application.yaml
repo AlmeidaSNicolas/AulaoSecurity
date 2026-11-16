@@ -2,8 +2,6 @@ spring:
   application:
     name: "AulaoSecurity"
   config:
-    # Carrega o .env local (fora do git) como arquivo de propriedades.
-    # Variáveis de ambiente reais do sistema têm prioridade sobre ele.
     import: optional:file:.env[.properties]
   security:
     oauth2:

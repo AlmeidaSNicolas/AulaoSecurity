@@ -13,7 +13,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception{
+    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
         return httpSecurity.authorizeHttpRequests(authorizeConfig -> {
             authorizeConfig.requestMatchers("/public").permitAll();
             authorizeConfig.requestMatchers("/logout").permitAll();
